@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 64px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dataContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 600px;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bio {
+  text-align: center;
+  color: gray;
+  margin-top: 16px;
+}
+
+.textbox {
+  border-radius: 8px;
+  padding: 5px;
+  margin-top: 10px;
+  border: 2px solid #000;
+  letter-spacing: 1.3px;
+}
+
+.textbox:focus {
+  border: 2px solid aquamarine;
+}
+
+.waveButton {
+  cursor: pointer;
+  margin: 16px 0;
+  padding: 8px;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(270deg, rgb(132, 250, 176), rgb(143, 211, 244)) 0%
+    0% / 400% 400%;
+}
+
+.line {
+  background-color: #000;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+}
+
+.wave-item {
+  margin: 0.5rem 0;
+  background-color: rgb(236, 212, 234);
+  padding: 10px;
+  border-radius: 10px;
 }
